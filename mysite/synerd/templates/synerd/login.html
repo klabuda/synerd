@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>synerD | Log In</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Kerstin LaBuda" />
+        <link rel="stylesheet" href="../../static/synerd/css/main.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="icon" href="../../static/synerd/img/logo.png" />
+    </head>
+    <body>
+        <header class="small">
+            <a href="{% url 'index' %}"><img src="../../static/synerd/img/logo.png" id="logo"/></a>
+            <hgroup>
+                <h1>Synergy of Diaspora</h1>
+                <h2>Let's Serve purposefully</h2>
+            </hgroup>
+        </header>
+        <form id="loginform" action="">
+            <fieldset>
+                <legend>Log In</legend>
+                <p><label class="title" for="uname">Username: </label>
+                <input type="text" name="uname" id="uname" required><br>
+                <label class="title" for="pass">Password: </label>
+                <input type="password" name="pass" id="pass" required>
+                <span toggle="#pass" class="fa fa-fw fa-eye field-icon toggle-password"></span></p>
+                <div class="center"><input type="submit" value="Login" /></div>
+            </fieldset>
+        </form>
+        <p class="center"><i>Don't have an account? </i> Register <a href="{% url 'registration' %}">here</a></p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../../static/synerd/js/script.js"></script>
+    </body>
+</html>

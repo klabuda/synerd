@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>synerD | Synergy of Diaspora</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Kerstin LaBuda" />
+        <link rel="stylesheet" href="../../static/synerd/css/main.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="icon" href="../../static/synerd/img/logo.png" />
+    </head>
+    <body>
+        <header>
+            <a href="{% url 'index' %}"><img src="../../static/synerd/img/logo.png" id="logo"/></a>
+            <nav>
+                <ul>
+                    <div class="search-container">
+                        <form action="">
+                            <input type="text" placeholder="Search..." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <a href=""><li>Contact Us</li></a>
+                    <a href=""><li>About Us</li></a>
+                    <a href=""><li>Galleries</li></a>
+                    <button class="donate">Donate</button>
+                </ul>
+            </nav>
+            <hgroup>
+                <h1>Synergy of Diaspora</h1>
+                <h2>Let's Serve Purposefully</h2>
+            </hgroup>
+            <nav class="middle">
+                <a href="{% url 'registration' %}" id="register"><li>Join Us</li></a>
+                <a href="{% url 'login' %}" id="login"><li>Sign In</li></a>
+            </nav>
+            <nav class="bottom">
+                <a href=""><li>Resources</li></a>
+                <a href=""><li>Members</li></a>
+                <a href=""><li>Our Work</li></a>
+            </nav>
+        </header>
+        <div class="main">
+            <div class="black">
+                <div id="slider">
+                    <div class="mover"></div>
+                </div><!--end of slider-->
+            </div><!--end of black-->
+            <button class="donate" id="donatescroll">Donate</button>
+            <aside>
+                <h3>What's New?</h3>
+                <h4>Announcements</h4>
+                <p><b>I took all of these images from: <a href="https://diagives.org/" target="_blank">Diaspora Gives Bangladesh</a></b><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
+                    pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
+                    Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
+                    in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
+                    per conubia nostra, per inceptos himenaeos.</p>
+                <h4>Feature News</h4>
+                <p>Duis pharetra luctus lacus ut 
+                    vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
+                    Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat 
+                    faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. 
+                    Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. 
+                    Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus, 
+                    non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.</p>
+            </aside>
+            <table class="tabs">
+                <thead>
+                    <tr>
+                        <th id="tab1" class="active tab">ID Protection</th>
+                        <th id="tab2" class="tab">Corpses<br>Repatriation</th>
+                        <th id="tab3" class="tab">Assistance<br>Programs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="tabcontent">
+                            <p><b>This is something about ID Protection</b></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
+                                pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
+                                Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
+                                in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
+                                per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut 
+                                vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
+                                Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat 
+                                faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. 
+                                Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. 
+                                Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus, 
+                                non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
+                                pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
+                                Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
+                                in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
+                                per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut 
+                                vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
+                                Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat 
+                                faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. 
+                                Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. 
+                                Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus, 
+                                non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!--end of main-->
+        <div class="feature">
+            <h2>Feature Activity</h2>
+            <img src="../../static/synerd/img/feature.jpg" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
+                pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
+                Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
+                in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
+                per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut 
+                vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
+                Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat 
+                faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. 
+                Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. 
+                Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus, 
+                non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.</p>
+        </div><!--end of feature-->
+        <footer>
+            <table class="tfooter">
+                <tr>
+                    <td>
+                        <h1>synerD</h1>
+                        <h2>Synergy of Diaspora</h2>
+                    </td>
+                    <td>
+                        <p>42 Charity Drive<br>Somewhere, WI 53555</p>
+                        <p>(555) 555-555</p>
+                        <p><a href="mailto:info@synerd.com">info@synerD.com</a></p>
+                    </td>
+                    <td>
+                        <p><a href="">Get Involved</a></p>
+                        <p><a href="">Blog</a></p>
+                        <p><a href="">Ways to Give</a></p>
+                    </td>
+                    <td>
+                        <p><a href="">About Us</a></p>
+                        <p><a href="">Revenues</a></p>
+                        <p><a href="">Expenditures</a></p>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+            <p class="copyright"><a href="">Site Map</a> | <a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a> | Copyright @ 2021</p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../../static/synerd/js/script.js"></script>
+    </body>
+</html>

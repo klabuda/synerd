@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Exo:ital,wght@1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, thead {
+    font-family: 'Exo', sans-serif;
+}
+
+h1 {
+    color: #006600;
+}
+
+h2 {
+    color: #16664f;
+}
+
+h3 {
+    color: #EE6123;
+    font-size: 30px;
+}
+
+nav {
+    overflow: hidden;
+    font-family: 'Exo', sans-serif;
+}
+  
+nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 17px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 5px solid white;
+}
+  
+nav a:hover {
+    color: #16664f;
+    border-top: none;
+    transition: .2s ease;
+}
+  
+nav .search-container {
+    float: right;
+    margin-left: 30px;
+}
+  
+input[type=text] {
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 17px;
+    font-family: 'Noto Sans', sans-serif;
+}
+  
+nav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+nav .search-container button:hover {
+    background: #ccc;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    float: right;
+}
+
+#slider {
+    height: 160px;
+    max-width: 1060px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+  
+#slider > div {
+    height: 160px;
+    width: 7169px;
+    background: url(../img/slideshow.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+
+#slider .mover {
+    animation: moveSlideshow 200s linear infinite;
+}
+
+#slider .mover:hover {
+    animation-play-state: paused;
+}
+  
+@keyframes moveSlideshow {
+    100% { 
+        transform: translateX(-66.6666%);  
+    }
+}
+
+#logo {
+    width: 200px;
+    padding: 20px;
+    float: left;
+}
+
+#logo:hover {
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
+
+.donate {
+    background: white;
+    border: 5px solid #006600;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Exo', sans-serif;
+    float: right;
+    margin-right: 30px;
+}
+
+.donate:hover {
+    background: #006600;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+header {
+    height: 300px;
+}
+
+header h2 {
+    display: inline-block;
+    color: #16664f;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+button {
+    color: #006600;
+}
+
+button:hover {
+    color: white;
+}
+
+hgroup {
+    display: inline-block;
+}
+
+.middle {
+    margin-top: -50px;
+    padding-right: 15px;
+}
+
+.middle a {
+    color: white;
+    background: #EE6123;
+}
+
+.middle a:hover {
+    border: 5px solid #EE6123;
+    background: white;
+    color: #EE6123;
+}
+
+.bottom {
+    width: 100%;
+    background: #B9D1CA;
+    color: white;
+    border-bottom: 5px solid black;
+    text-transform: uppercase;
+}
+
+.bottom a {
+    padding: 20px 30px 10px 15px;
+    border: 5px solid #B9D1CA;
+}
+
+
+thead th {
+    height: 100px;
+    width: 300px;
+}
+
+.black {
+    background: black;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+.tabs {
+    width: 60%;
+}
+
+.tab:hover {
+    background: #B9D1CA;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.tabcontent {
+    padding: 30px;
+    background: #16664f;
+    color: white;
+}
+
+.active {
+    background: #16664f;
+    color: white;
+}
+
+aside {
+    float: right;
+    width: 35%;
+    padding-right: 30px;
+}
+
+a {
+    color: #EE6123;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #16664f;
+}
+
+.feature {
+    clear: both;
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+.feature img {
+    float: left;
+    width: 200px;
+    padding: 0 30px 30px 0;
+}
+
+#donatescroll {
+    position: fixed;
+    bottom: 115px;
+    right: 30px;
+    visibility: hidden;
+    box-shadow: 5px 5px 15px grey;
+}
+
+footer {
+    clear: both;
+    padding-top: 10px;
+    text-align: center;
+    background: #B9D1CA;
+    border-top: 5px solid #16664f;
+    margin-top: 80px;
+}
+
+.tfooter {
+    width: 90%;
+    margin: auto;
+}
+
+.tfooter td {
+    width: 20%;
+}
+
+.copyright {
+    background: white;
+    padding: 20px;
+    margin: 0;
+    vertical-align: middle;
+    border-top: 5px solid #16664f;
+}
+
+.tfooter td h1, .tfooter td h2 {
+    text-align: left;
+}
+
+.tfooter td h2 {
+    margin-top: -20px;
+}
+
+.small {
+    height: 250px;
+}
+
+fieldset {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    border: 1px solid #006600;
+    line-height: 50px;
+}
+
+legend {
+    font-family: "Exo", sans-serif;
+    color: #16664f;
+ 
+    border-radius: 10px;
+    margin-left: 450px;
+    padding: 0 15px;
+}
+
+form input[type="text"], input[type="password"], select, input[type="date"] {
+    width: 200px;
+    padding: 2px;
+    outline: none;
+    font-size: 17px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+form input[type="text"]:focus, form input[type="text"]:hover, input[type="password"]:focus, input[type="password"]:hover {
+    background-color: #B9D1CA;
+}
+
+.title {
+    float: left;
+    width: 200px;
+    clear: left;
+    margin-left: 50px;
+}
+
+input[type="submit"] {
+    float: none;
+    margin: 20px;
+    border: 5px solid #16664f;
+    color: #16664f;
+    background: white;
+    font-size: 17px;
+    padding: 10px;
+    font-family: "Exo", sans-serif;
+}
+
+input[type="submit"]:hover {
+    background: #16664f;
+    color: white;
+}
+
+
+.submit {
+    text-align: center;
+}
+
+.center {
+    text-align: center
+}
+
+#toggle-password {
+    margin-left: -20px;
+}
+
+.feedback {
+    color: red;
+    font-size: 10px;
+}
+
+.invalid {
+    border: 1px solid red;
+}
